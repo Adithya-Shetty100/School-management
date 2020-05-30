@@ -1,29 +1,29 @@
-package com.example.home;
+package com.example.circular;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-
-    public void details(View view){
-        TextView display=(TextView)findViewById(R.id.enter);
-        display.setText("Name:Adithya   Section:Q\nB.Tech ECE    2019-23");
+    String msg="";
+    public void p1(View view){
+        msg="Open House";
+        Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
     }
 
-    public void report(View view){
-        TextView display=(TextView)findViewById(R.id.enter);
-        display.setText("Math:A    Comp:A\nPhy:B     Mech:A\nSGPA: 8.36");
+    public void p2(View view){
+        msg="Party";
+        Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
     }
 
-    public void attend(View view){
-        TextView display=(TextView)findViewById(R.id.enter);
-        display.setText("Total Days: 120     Present:92\nAttendence: 76.67%");
+    public void p3(View view){
+        msg="Result";
+        Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
     }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
